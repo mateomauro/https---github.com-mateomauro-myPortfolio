@@ -98,13 +98,26 @@ function scrollToTop() {
 }
 
 
-let btnCv = document.querySelector(".btn-cv")
-let urlEspañol = "../img/cv-español.pdf";; // 
-let urlIngles = "../img/cv-ingles.pdf";; // 
+// let btnCv = document.querySelector(".btn-cv")
+// let urlEspañol = "../img/cv-español.pdf";; // 
+// let urlIngles = "../img/cv-ingles.pdf";; // 
 
-btnCv.addEventListener("click", () => {
-    window.open(urlIngles, '_blank');
-})
+// btnCv.addEventListener("click", () => {
+//     window.open(urlIngles, '_blank');
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -177,6 +190,15 @@ menuLinks.forEach((link) => {
 
 
 
+
+
+
+
+
+
+
+
+
 //MODO NOCTURNO
 
 // Primero, selecciona el checkbox
@@ -186,7 +208,7 @@ let header = document.querySelector(".header")
 let header_a = document.querySelectorAll(".header a");
 let logoMain = document.querySelector(".logo-main")
 let contactAll = document.querySelector(".contacts-all")
-let contactAllDivs = document.querySelectorAll(".contacts-all div");
+let contactAllDivs = document.querySelectorAll(".contacts-all a");
 let iconContacts = document.querySelectorAll(".icon-contact")
 let project = document.querySelector(".project");
 let projectTitle = document.querySelector(".project-title")
@@ -194,6 +216,7 @@ let rectanguloDerechoBlack = document.querySelector(".Rectangle-derecho-black")
 let rectanguloDerechoWhite = document.querySelector(".Rectangle-derecho-white")
 let dropdownMenuA = document.querySelectorAll('.dropdown-menu a');
 let bar = document.querySelectorAll(".bar");
+let btnArrow = document.querySelector(".arrow-up")
 
 bar.forEach(function (elemento) {
     elemento.style.color = '#08053E';
@@ -223,8 +246,8 @@ function changeTheme() {
         });
         logoMain.style.fill = '#F6F5FB'
         contactAll.style.backgroundColor = '#08053E'
-        contactAllDivs.forEach(function (div) {
-            div.style.color = '#F6F5FB';
+        contactAllDivs.forEach(function (a) {
+            a.style.color = '#F6F5FB';
         });
         iconContacts.forEach(function (icon) {
             icon.style.fill = '#F6F5FB'; //
@@ -238,6 +261,8 @@ function changeTheme() {
         bar.forEach(function (elemento) {
             elemento.style.backgroundColor = '#F6F5FB';
         });
+        // btnUp.style.backgroundColor = '#F6F5FB'
+        // btnArrow.style.borderBottom = '15px solid #08053E'
     } else {
         contenedor.style.backgroundColor = '#08053E';
         contenedor.style.backgroundColor = '#08053E';
@@ -248,8 +273,8 @@ function changeTheme() {
         });
         logoMain.style.fill = '#08053E'
         contactAll.style.backgroundColor = '#F6F5FB'
-        contactAllDivs.forEach(function (div) {
-            div.style.color = '#08053E';
+        contactAllDivs.forEach(function (a) {
+            a.style.color = '#08053E';
         });
         iconContacts.forEach(function (icon) {
             icon.style.fill = '#08053E'; //
@@ -263,5 +288,7 @@ function changeTheme() {
         bar.forEach(function (elemento) {
             elemento.style.backgroundColor = '#08053E';
         });
+        // btnUp.style.backgroundColor = '#08053E'
+        // btnArrow.style.borderBottom = '15px solid #F6F5FB'
     }
 }
