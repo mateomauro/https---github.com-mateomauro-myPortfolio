@@ -1058,6 +1058,7 @@ section {
     .about-me-informacion {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
     }
 
     .about-part1 {
@@ -1127,9 +1128,9 @@ section {
 
 @media (max-width: 470px) {
 
-    .projects {
+    /* .projects {
         margin: 20px 0;
-    }
+    } */
 
     .project {
         height: auto;
